@@ -65,7 +65,7 @@ export default function App() {
   return (
     <div>
       <SearchBar onSubmit={handleSubmit} />
-      {error && <ErrorMessage message={error} />}{" "}
+      {error && <ErrorMessage message={error} />}
       <ImageGallery images={images} openModal={openModal} />
       {images.length > 0 && <LoadMoreBtn onClick={handleLoadMore} />}
       {selectedImage && (
